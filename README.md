@@ -1,11 +1,12 @@
-Persaud: Open-Source AI Agent on Solana
+# Persaud: Open-Source AI Agent on Solana
 
 Persaud is an open-source AI agent designed to deliver real-time Solana data, AI-powered interactions, wallet integration, and developer-friendly features. It leverages cutting-edge AI technologies like GPT-4 to provide an intelligent and interactive experience for blockchain users and developers.
 
-🚀 Features
+---
 
-Real-time Solana Data
+## 🚀 Features
 
+### Real-time Solana Data
 - **Live price tracking and market analysis**
 - **Trending token insights**
 - **Wallet balance monitoring**
@@ -13,32 +14,28 @@ Real-time Solana Data
 - **Jito MEV rewards tracking**
 - **Compressed NFT minting**
 
-AI-Powered Interactions
-
+### AI-Powered Interactions
 - **Natural language processing via GPT-4**
 - **Context-aware responses**
 - **Blockchain-specific knowledge integration**
 - **Sarcastic personality traits**
 - **Custom function calling**
 
-Wallet Integration
-
+### Wallet Integration
 - **Built-in agent wallet functionality**
 - **Secure SOL transfers**
 - **Transaction validation**
 - **Balance management**
 - **NFT minting capabilities**
 
-Developer Experience
-
+### Developer Experience
 - **TypeScript support**
 - **Hot reload development**
 - **Comprehensive API documentation**
 - **Rate limiting protection**
 - **Error handling with personality**
 
-Third-Party Integrations
-
+### Third-Party Integrations
 - **Helius RPC integration**
 - **Crossmint NFT minting**
 - **Jito MEV analytics**
@@ -46,27 +43,29 @@ Third-Party Integrations
 - **Jupiter Swap**
 - **Birdeye API**
 
-Multi-Platform Support
-
+### Multi-Platform Support
 - **Telegram bot integration**
 - **Cross-platform message syncing**
 - **Real-time notifications**
 - **Command-based interactions**
 - **Inline keyboard support**
 
-⚙️ Prerequisites
+---
+
+## ⚙️ Prerequisites
 
 Ensure you have the following installed:
-
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/), [yarn](https://yarnpkg.com/), [pnpm](https://pnpm.io/), or [bun](https://bun.sh/)
 
-🛠 Environment Setup
+---
 
-Create a .env.local file in the root directory.
+## 🛠 Environment Setup
 
-Add the following environment variables:
+1. Create a `.env.local` file in the root directory.
+2. Add the following environment variables:
 
+```plaintext
 NEXT_PUBLIC_HELIUS_API_KEY=your_helius_api_key
 WALLET_MNEMONIC=your_wallet_mnemonic
 CROSSMINT_API_KEY=your_crossmint_api_key
@@ -77,16 +76,20 @@ TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 TELEGRAM_WEBHOOK_URL=your_webhook_url # Optional: for production deployments
 OPENAI_API_KEY=your_openai_key
 BOT_API_BASE_URL=http://127.0.0.1:3000 # if running locally
+```
 
-🚀 Getting Started
+---
 
-Clone the repository:
+## 🚀 Getting Started
 
+### Clone the repository:
+```bash
 git clone https://github.com/Persaudoing/persaud.git
 cd persaud
+```
 
-Install dependencies:
-
+### Install dependencies:
+```bash
 npm install
 # or
 yarn install
@@ -94,9 +97,10 @@ yarn install
 pnpm install
 # or
 bun install
+```
 
-Run the development server:
-
+### Run the development server:
+```bash
 npm run dev
 # or
 yarn dev
@@ -104,9 +108,15 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
 
-Open http://localhost:3000 to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the result.
 
+---
+
+## 📂 Project Structure
+
+```plaintext
 📂 Project Structure
 
 ├── src/
@@ -149,11 +159,13 @@ Open http://localhost:3000 to see the result.
 ├── tailwind.config.js
 ├── tsconfig.json
 └── package.json
+```
 
-📡 API Routes
+---
 
-POST /api/crossmint
+## 📡 API Routes
 
+### **POST /api/crossmint**
 - **Mint compressed NFTs**
 - **Parameters:**
   - `recipient: string`
@@ -162,40 +174,42 @@ POST /api/crossmint
   - `description: string`
 - **Returns:** NFT minting response
 
-GET /api/wallet/balance
-
+### **GET /api/wallet/balance**
 - **Get wallet balance**
 - **Returns:** Balance in SOL and USD
 
-POST /api/wallet/send
-
+### **POST /api/wallet/send**
 - **Send SOL to address**
 - **Parameters:**
   - `recipient: string`
   - `amount: number`
 - **Returns:** Transaction signature
 
-GET /api/birdeye/trending
-
+### **GET /api/birdeye/trending**
 - **Get trending tokens from Birdeye**
 - **Parameters:**
   - `limit: number` (default: 10)
 - **Returns:** List of trending tokens
 
-GET /api/lulo/rates
-
+### **GET /api/lulo/rates**
 - **Get current USDC lending rates across Solana protocols**
 - **Returns:** List of lending rates
 
-🤖 AI-Powered Capabilities
+---
+
+## 🤖 AI-Powered Capabilities
 
 Persaud integrates advanced AI features powered by GPT-4:
 - **Natural language understanding:** Enables context-aware interactions.
 - **Customizable personality:** Create a unique user experience with sarcasm or other traits.
 - **Blockchain insights:** AI capabilities fine-tuned for Solana and decentralized ecosystems.
 
-📜 License
+---
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## 📜 License
 
-Happy building with Persaud! 🌟
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+---
+
+### Happy building with Persaud! 🌟
